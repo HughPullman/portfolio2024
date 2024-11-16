@@ -2,18 +2,59 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: black;
     z-index: -1;
-    width: 70%;
-    margin: 0 15%;
-    padding: 150px 0;
-    gap: 25px;
-    row-gap: 25px;
+    width: 1260px;
+    margin: auto;
+    padding-top: 150px;
+    gap: 15px;
+    row-gap: 15px;
 
     .icon{
         display: flex;
         flex-direction: row;
         gap: 15px;
     }
+
+    .stackedBox{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .educationBox{
+            width: 300px;
+            height: 142.5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            border: solid 1px #1E3E62;
+            cursor: pointer;
+            background-color: #0B192C;
+    
+            span {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #cacaca;
+                }
+
+                .circle{
+                    background-color: #cacaca;
+                    padding: 5px;
+                    border-radius: 35px;
+
+                    .muiIcon {
+                        font-size: 40px;
+                    }
+
+                }
+            
+
+        }
+    }
+
 
 }

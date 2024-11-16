@@ -1,0 +1,47 @@
+.projectsBox {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: solid 1px #1E3E62;
+    cursor: pointer;
+    background-color: #0B192C;
+    overflow: hidden;
+
+
+    span {
+        position: absolute;
+        z-index: 100;
+        font-size: 30px;
+        font-weight: 700;
+        color: #cecece;
+    }
+
+    .carousel {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+
+        img{
+            object-fit: cover;
+            height: 300px;
+            opacity: 0.4;
+        }
+
+        .carousel-item{
+            padding-top: 0px;
+            height: 300px;
+            justify-content: center;
+        }
+
+    }
+
+
+
+
+
+}

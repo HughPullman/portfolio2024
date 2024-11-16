@@ -7,11 +7,10 @@
     border: solid 1px #1E3E62;
     justify-content: space-between;
     align-items: center;
-    width: 28%;
-    padding: 50px 50px;
+    width: 300px;
+    height: 350px;
+    padding: 25px 25px;
     color: #cacaca;
-    min-width: 350px;
-    min-height: 350px;
     row-gap: 10px;
 
     .icon{
@@ -24,9 +23,9 @@
         border: 2px #0B192C;
         padding: 10px;
         gap: 2px;
-        box-shadow: 0px 0px 25px 0px rgba(255, 101, 0, 0.5);
-        -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 101, 0, 0.5);
-        -moz-box-shadow: 0px 0px 25px 0px rgba(255, 101, 0, 0.5);
+        box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
 
         span{
             font-size: 12px;

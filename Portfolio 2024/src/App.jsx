@@ -6,24 +6,62 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [selected, setSelected] = useState("1");
+  const [change, setChange] = useState("1");
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3500);
+    }, 3000);
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setChange(selected);
+    }, [600]);
+  }, [selected]);
 
   return (
     <>
       <div className="app">
-        {loading ? (
+        {/* {loading ? (
           <Loading />
         ) : (
           <>
-            <Loading />
-            <Header />
-            <Home />
+            <Loading /> */}
+        {/* </>
+        )} */}
+        {change === "1" ? (
+          <>
+            <Header active={selected} setActive={setSelected} />
+            <Home selected={selected} setSelected={setSelected} />
           </>
+        ) : (
+          <></>
+        )}
+        {change === "2" ? (
+          <>
+            <Header active={selected} setActive={setSelected} />
+            <Home selected={selected} setSelected={setSelected} />
+          </>
+        ) : (
+          <></>
+        )}
+        {change === "3" ? (
+          <>
+            <Header active={selected} setActive={setSelected} />
+            <Home selected={selected} setSelected={setSelected} />
+          </>
+        ) : (
+          <></>
+        )}
+        {change === "4" ? (
+          <>
+            <Header active={selected} setActive={setSelected} />
+            <Home selected={selected} setSelected={setSelected} />
+          </>
+        ) : (
+          <></>
         )}
       </div>
     </>

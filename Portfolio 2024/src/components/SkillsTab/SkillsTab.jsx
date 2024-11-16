@@ -10,10 +10,21 @@ import {
   MongodbOriginal,
   GithubOriginal,
 } from "devicons-react";
+import { useState, useEffect } from "react";
 
-const SkillsTab = () => {
+const SkillsTab = ({ active }) => {
+  const [intro, setIntro] = useState("");
+
+  useEffect(() => {
+    if (active) {
+      setIntro("animate__animated animate__fadeInTopRight");
+    } else {
+      setIntro("animate__animated animate__fadeOutRightBig");
+    }
+  }, [active]);
+
   return (
-    <div className="skillsTab">
+    <div className={`skillsTab ${intro}`}>
       <div className="icon">
         <Html5Original size={40} />
         <span>HTML5</span>

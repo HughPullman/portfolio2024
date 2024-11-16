@@ -20,14 +20,16 @@
     
 }
 .header{
-    height: 91px;
+    display: flex;
+    align-items: center;
+    height: 70px;
     background-color: #0B192C;
     color: #cacaca;
-    position: fixed;
-    width: 70%;
+    position: absolute;
+    width: 60%;
     max-width: 100%;
     z-index: 99;
-    margin: 1% 15%;
+    margin: 1% 20%;
     border-radius: 10px;
     border: solid 1px #1E3E62;
 
@@ -37,7 +39,8 @@
     }
 
     .wrapper{
-        padding: 20px 20px;
+        width: 100%;
+        padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,8 +62,8 @@
         .right{
             display: flex;
             align-items: center;
-            gap: 100px;
-            padding-right: 160px;
+            gap: 50px;
+            padding-right: 10px;
             font-size: 20px;
             font-weight: 600;
             cursor: pointer;
@@ -68,22 +71,35 @@
 
             div{
                 position: relative;
+                background-color: none;
+                padding: 5px 15px;
+                border-radius: 25px;
+            }
+
+            div:hover{
+                transform: scale(1.1);
+                transition: 0.4s;
+                
+            }
+
+            .active{
+                background-color: #1E3E62 !important;
             }
         }
 
-        .right div::after{
-            content: '';
-            width: 0;
-            height: 3px;
-            background-color: #1E3E62;
-            position: absolute;
-            left: 0;
-            bottom: -6px;
-            transition: 0.5s;
-        }
-        .right div:hover::after{
-            width: 105%;
-        }
+        // .right div::after{
+        //     content: '';
+        //     width: 0;
+        //     height: 3px;
+        //     background-color: #1E3E62;
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: -6px;
+        //     transition: 0.5s;
+        // }
+        // .right div:hover::after{
+        //     width: 105%;
+        // }
     }
 }
 
