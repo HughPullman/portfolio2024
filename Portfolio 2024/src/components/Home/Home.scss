@@ -1,0 +1,19 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    z-index: -1;
+    width: 70%;
+    margin: 0 15%;
+    padding: 150px 0;
+    gap: 25px;
+    row-gap: 25px;
+
+    .icon{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+}

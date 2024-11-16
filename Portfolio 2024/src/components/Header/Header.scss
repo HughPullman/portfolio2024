@@ -1,0 +1,89 @@
+@media (max-width: 1000px){
+    .header{
+        height: 60px !important;
+        .wrapper{
+            padding: 20px 5px !important;
+        }
+        .right{
+            padding-right: 25px !important;
+            gap: 20px !important;
+            font-size: 16px !important;
+        }
+        .left{
+            padding: 5px !important;
+
+            span{
+                font-size: 22px !important;
+            }
+        }
+    }
+    
+}
+.header{
+    height: 91px;
+    background-color: #0B192C;
+    color: #cacaca;
+    position: fixed;
+    width: 70%;
+    max-width: 100%;
+    z-index: 99;
+    margin: 1% 15%;
+    border-radius: 10px;
+    border: solid 1px #1E3E62;
+
+
+    .colouredLet{
+        color: #FF6500;
+    }
+
+    .wrapper{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 80px;
+
+            span{
+                font-size: 42px;
+                font-weight: 700;
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            padding-right: 160px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            
+
+            div{
+                position: relative;
+            }
+        }
+
+        .right div::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background-color: #1E3E62;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        .right div:hover::after{
+            width: 105%;
+        }
+    }
+}
+
