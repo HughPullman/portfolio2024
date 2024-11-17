@@ -4,7 +4,6 @@ import { HashLink } from "react-router-hash-link";
 const Header = ({ active, setActive }) => {
   const handleActive = (e) => {
     setActive(e.target.id);
-    console.log(e.target);
   };
 
   return (
@@ -16,32 +15,36 @@ const Header = ({ active, setActive }) => {
         </div>
         <div className="right">
           <div
-            className={active === "1" ? "active" : undefined}
+            className={active === "1" ? "active" : ""}
             onClick={handleActive}
+            id="1"
           >
             <HashLink className="link" smooth to="/#home" id="1">
               Home
             </HashLink>
           </div>
           <div
-            className={active === "2" ? "active" : undefined}
+            className={active === "2" ? "active" : ""}
             onClick={handleActive}
+            id="1"
           >
             <HashLink className="link" smooth to="/#about" id="2">
-              About
+              More Info
             </HashLink>
           </div>
           <div
-            className={active === "3" ? "active" : undefined}
+            className={active === "3" ? "active" : ""}
             onClick={handleActive}
+            id="1"
           >
             <HashLink className="link" smooth to="/#projects" id="3">
               Projects
             </HashLink>
           </div>
           <div
-            className={active === "4" ? "active" : undefined}
+            className={active === "4" ? "active" : ""}
             onClick={handleActive}
+            id="1"
           >
             <HashLink className="link" smooth to="/#contact" id="4">
               Contact

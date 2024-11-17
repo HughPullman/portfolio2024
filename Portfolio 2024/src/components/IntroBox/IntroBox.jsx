@@ -1,6 +1,7 @@
 import "./IntroBox.scss";
 import CanvasMac from "../CanvasMac/CanvasMac";
 import { useEffect, useState } from "react";
+import AdsClickIcon from "@mui/icons-material/AdsClick";
 
 const IntroBox = ({ active }) => {
   const [intro, setIntro] = useState("");
@@ -22,7 +23,7 @@ const IntroBox = ({ active }) => {
           Pullman
         </span>
       </div>
-      <div className="about">
+      <div className="aboutIntro">
         <div className="me">
           <h1>About Me</h1>
           <img src="/img/me.jpg" alt="" />
@@ -33,6 +34,9 @@ const IntroBox = ({ active }) => {
           course.
         </p>
         <CanvasMac />
+        <span className="clickMe">
+          <AdsClickIcon /> Click
+        </span>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@
             }
         }
 
-        .about {
+        .aboutIntro {
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -41,6 +41,14 @@
             justify-content: center;
             gap: 10px;
             padding-bottom: 10px;
+
+            .clickMe{
+                position: absolute;
+                top: 190px;
+                left: 900px;
+                z-index: 190;
+                color: #FF6500;
+            }
 
             .me{
                 display: flex;

@@ -3,7 +3,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: black;
     z-index: -1;
     width: 1260px;
     margin: auto;
@@ -56,5 +55,29 @@
         }
     }
 
+    .experienceBoxes{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .box{
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+        }
+
+        .contactExperience{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 30px;
+        }
+
+        .contactBox{
+            cursor: pointer;
+        }
+
+
+    }
 
 }

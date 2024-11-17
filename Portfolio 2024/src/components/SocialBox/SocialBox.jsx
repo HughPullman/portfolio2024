@@ -2,7 +2,7 @@ import "./SocialBox.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const SocialBox = ({ colour, icon, link, active, delay }) => {
+const SocialBox = ({ colour, icon, link, active }) => {
   const [intro, setIntro] = useState("");
 
   useEffect(() => {
