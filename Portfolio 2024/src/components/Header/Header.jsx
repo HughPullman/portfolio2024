@@ -19,7 +19,7 @@ const Header = ({ active, setActive }) => {
             onClick={handleActive}
             id="1"
           >
-            <HashLink className="link" smooth to="/#home" id="1">
+            <HashLink className="link" smooth to="" id="1">
               Home
             </HashLink>
           </div>
@@ -28,7 +28,7 @@ const Header = ({ active, setActive }) => {
             onClick={handleActive}
             id="1"
           >
-            <HashLink className="link" smooth to="/#about" id="2">
+            <HashLink className="link" smooth to="" id="2">
               More Info
             </HashLink>
           </div>
@@ -37,7 +37,7 @@ const Header = ({ active, setActive }) => {
             onClick={handleActive}
             id="1"
           >
-            <HashLink className="link" smooth to="/#projects" id="3">
+            <HashLink className="link" smooth to="" id="3">
               Projects
             </HashLink>
           </div>
@@ -46,7 +46,7 @@ const Header = ({ active, setActive }) => {
             onClick={handleActive}
             id="1"
           >
-            <HashLink className="link" smooth to="/#contact" id="4">
+            <HashLink className="link" smooth to="" id="4">
               Contact
             </HashLink>
           </div>

@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    opacity: 0.8;
     cursor: pointer;
-
-    .socialIcon{
-
-    }
+}
+.socialBox:hover{
+    opacity: 1;
 }

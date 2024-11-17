@@ -29,9 +29,9 @@ const IntroBox = ({ active }) => {
           <img src="/img/me.jpg" alt="" />
         </div>
         <p>
-          I’m a software engineer with a background in Electrical Engineering
-          and a recent graduate of the Digital Futures Software Engineering
-          course.
+          I’m a full-stack software engineering, with a stronger focus in
+          front-end. I have a background in Electrical Engineering and a recent
+          graduate of the Digital Futures Software Engineering course.
         </p>
         <CanvasMac />
         <span className="clickMe">

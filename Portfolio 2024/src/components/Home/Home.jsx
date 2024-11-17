@@ -18,6 +18,9 @@ import SurfingIcon from "@mui/icons-material/Surfing";
 import SailingIcon from "@mui/icons-material/Sailing";
 import KitesurfingIcon from "@mui/icons-material/Kitesurfing";
 import GetAppIcon from "@mui/icons-material/GetApp";
+import ContactMe from "../ContactMe/ContactMe";
+import CV from "../CV/CV";
+import ContactDetails from "../ContactDetails/ContactDetails";
 
 const Home = ({ selected, setSelected }) => {
   const [active, setActive] = useState(true);
@@ -143,22 +146,44 @@ const Home = ({ selected, setSelected }) => {
                   </>
                 }
               />
-              <ExperienceBox
-                active={active2}
-                title={"Any Questions?"}
-                info={"Please contact me!"}
-                icon={
-                  <div className="contactExperience">
-                    <EmailIcon fontSize="large" />{" "}
-                    <GetAppIcon fontSize="large" />
-                  </div>
-                }
-                clickable={"contactBox"}
-                onClick={setSelected}
-              />
+              <div className="contactExp">
+                <ExperienceBox
+                  active={active2}
+                  title={"Any Questions?"}
+                  info={"Please contact me!"}
+                  icon={
+                    <div className="contactExperience">
+                      <EmailIcon fontSize="large" />{" "}
+                      <GetAppIcon fontSize="large" />
+                    </div>
+                  }
+                  clickable={"contactBox"}
+                  onClick={setSelected}
+                />
+              </div>
             </div>
           </div>
           <Education active={active2} />
+        </>
+      )}
+      {change === "4" && (
+        <>
+          <ContactDetails active={active4} />
+          <CV active={active4} />
+          <ProjectsBox active={active4} setSelected={setSelected} />
+          <SocialBox
+            colour={"#21262d"}
+            link={"https://github.com/HughPullman"}
+            icon={<GithubOriginal size={60} />}
+            active={active4}
+          />
+          <SocialBox
+            colour={"#0077B5"}
+            link={"https://www.linkedin.com/in/hugh-pullman-03b417b1/"}
+            icon={<LinkedinOriginal size={60} />}
+            active={active4}
+          />
+          <ContactMe active={active4} />
         </>
       )}
     </div>

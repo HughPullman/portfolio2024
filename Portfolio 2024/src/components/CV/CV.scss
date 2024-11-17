@@ -1,0 +1,20 @@
+.cv{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #0B192C;
+    font-size: 24px;
+    font-weight: 700;
+    color: #cecece;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.cv:hover{
+    background-color: #1E3E62;
+}

@@ -53,6 +53,9 @@
             
 
         }
+        .educationBox:hover{
+            background-color: #1E3E62;
+        }
     }
 
     .experienceBoxes{
@@ -75,6 +78,10 @@
 
         .contactBox{
             cursor: pointer;
+        }
+
+        .contactExp:hover{
+            transform: scale(1.02);
         }
 
 
