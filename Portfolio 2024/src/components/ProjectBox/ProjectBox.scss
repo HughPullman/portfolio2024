@@ -1,0 +1,34 @@
+.projectBox{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: solid 1px #1E3E62;
+    cursor: pointer;
+    background-color: #0B192C;
+    overflow: hidden;
+
+    span {
+            position: absolute;
+            z-index: 100;
+            font-size: 20px;
+            font-weight: 700;
+            color: #cecece;
+        }
+
+        img{
+            object-fit: cover;
+            opacity: 0.4;
+            min-height: 300px;
+            min-width: 300px;
+        }
+
+}
+
+.projectBox:hover img{
+    opacity: 0.8;
+}

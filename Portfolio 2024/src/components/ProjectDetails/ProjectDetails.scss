@@ -1,0 +1,77 @@
+.projectDetails{
+    position: absolute;
+    width: 1245px;
+    height: 615px;
+    border-radius: 15px;
+    z-index: 50;
+    color: #cecece;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #0B192C;
+        border: solid 1px #1E3E62;
+        width: 615px;
+        height: 615px;
+        padding: 50px 80px;
+        border-radius: 15px;
+
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        span{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .icon{
+                background-color: #1E3E62;
+                border-radius: 15px;
+                border: 2px #0B192C;
+                padding: 10px;
+                box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
+                -moz-box-shadow: 0px 0px 15px 0px rgba(255, 101, 0, 0.5);
+            }
+        }
+    }
+
+    .right{
+        background-color: #0B192C;
+        border: solid 1px #1E3E62;
+        width: 615px;
+        height: 615px;
+        padding: 50px;
+        border-radius: 15px;
+
+        img{
+            
+        }
+    }
+
+    .closeBtn{
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        background-color: #FF6500;
+        border-radius: 15px;
+        padding:5px 25px;
+    }
+
+    .closeIcon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background-color: #FF6500;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

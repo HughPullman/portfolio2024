@@ -9,6 +9,7 @@ import {
   BootstrapOriginal,
   MongodbOriginal,
   GithubOriginal,
+  SassOriginal,
 } from "devicons-react";
 import { useState, useEffect } from "react";
 

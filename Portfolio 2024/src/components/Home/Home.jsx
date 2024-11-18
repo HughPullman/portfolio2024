@@ -21,6 +21,8 @@ import GetAppIcon from "@mui/icons-material/GetApp";
 import ContactMe from "../ContactMe/ContactMe";
 import CV from "../CV/CV";
 import ContactDetails from "../ContactDetails/ContactDetails";
+import ProjectBox from "../ProjectBox/ProjectBox";
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
 const Home = ({ selected, setSelected }) => {
   const [active, setActive] = useState(true);
@@ -29,6 +31,8 @@ const Home = ({ selected, setSelected }) => {
   const [active4, setActive4] = useState(false);
   const [education, setEducation] = useState("");
   const [change, setChange] = useState("1");
+  const [chosenProject, setChosenProject] = useState("1");
+  const [projectVis, setProjectVis] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -36,6 +40,7 @@ const Home = ({ selected, setSelected }) => {
     }, [600]);
 
     if (selected === "1") {
+      setProjectVis(false);
       setActive2(false);
       setActive3(false);
       setActive4(false);
@@ -46,6 +51,7 @@ const Home = ({ selected, setSelected }) => {
         setActive(true);
       }, [500]);
     } else if (selected === "2") {
+      setProjectVis(false);
       setActive(false);
       setActive3(false);
       setActive4(false);
@@ -54,6 +60,7 @@ const Home = ({ selected, setSelected }) => {
         setActive2(true);
       }, [500]);
     } else if (selected === "3") {
+      setProjectVis(false);
       setActive(false);
       setActive2(false);
       setActive4(false);
@@ -62,6 +69,7 @@ const Home = ({ selected, setSelected }) => {
         setActive3(true);
       }, [600]);
     } else {
+      setProjectVis(false);
       setActive(false);
       setActive2(false);
       setActive3(false);
@@ -71,6 +79,11 @@ const Home = ({ selected, setSelected }) => {
       }, [600]);
     }
   }, [selected]);
+
+  const handleProjectClick = (id) => {
+    setChosenProject(id);
+    setProjectVis(true);
+  };
 
   return (
     <div className="home" id="home">
@@ -165,6 +178,87 @@ const Home = ({ selected, setSelected }) => {
           </div>
           <Education active={active2} />
         </>
+      )}
+      {change === "3" && (
+        <div className="projectsTab">
+          <ProjectBox
+            active={active3}
+            title={"Spotify Audio-Visualizer"}
+            image={"spotifyVisual"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"1"}
+            row={"1"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"E-commerce"}
+            image={"HughStore"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"2"}
+            row={"1"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Fast Food website"}
+            image={"HughsFoods"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"3"}
+            row={"1"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Space Invaders"}
+            image={"spaceInvaders"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"4"}
+            row={"1"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Run and Gun"}
+            image={"runAndGun"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"5"}
+            row={"2"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Gazetteer"}
+            image={"gazetter"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"6"}
+            row={"2"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Gazetteer"}
+            image={"gazetter"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"6"}
+            row={"2"}
+          />
+          <ProjectBox
+            active={active3}
+            title={"Gazetteer"}
+            image={"gazetter"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"6"}
+            row={"2"}
+          />
+          <ProjectDetails
+            projectNo={chosenProject}
+            projectVis={projectVis}
+            setProjectVis={setProjectVis}
+          />
+        </div>
       )}
       {change === "4" && (
         <>
