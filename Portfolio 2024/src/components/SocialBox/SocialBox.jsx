@@ -18,6 +18,7 @@ const SocialBox = ({ colour, icon, link, active }) => {
       className={`socialBox ${intro}`}
       style={{ backgroundColor: colour }}
       to={link}
+      target="_blank"
     >
       <div className="socialIcon">{icon}</div>
     </Link>

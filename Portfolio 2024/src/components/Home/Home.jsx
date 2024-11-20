@@ -183,11 +183,20 @@ const Home = ({ selected, setSelected }) => {
         <div className="projectsTab">
           <ProjectBox
             active={active3}
+            title={"Fitness App"}
+            image={"fitnessAppWorkout"}
+            link={""}
+            handleProjectClick={handleProjectClick}
+            id={"1"}
+            row={"1"}
+          />
+          <ProjectBox
+            active={active3}
             title={"Spotify Audio-Visualizer"}
             image={"spotifyVisual"}
             link={""}
             handleProjectClick={handleProjectClick}
-            id={"1"}
+            id={"2"}
             row={"1"}
           />
           <ProjectBox
@@ -196,22 +205,13 @@ const Home = ({ selected, setSelected }) => {
             image={"HughStore"}
             link={""}
             handleProjectClick={handleProjectClick}
-            id={"2"}
-            row={"1"}
-          />
-          <ProjectBox
-            active={active3}
-            title={"Fast Food website"}
-            image={"HughsFoods"}
-            link={""}
-            handleProjectClick={handleProjectClick}
             id={"3"}
             row={"1"}
           />
           <ProjectBox
             active={active3}
-            title={"Space Invaders"}
-            image={"spaceInvaders"}
+            title={"Weather App"}
+            image={"weatherAppWeather"}
             link={""}
             handleProjectClick={handleProjectClick}
             id={"4"}
@@ -219,8 +219,8 @@ const Home = ({ selected, setSelected }) => {
           />
           <ProjectBox
             active={active3}
-            title={"Run and Gun"}
-            image={"runAndGun"}
+            title={"Space Invaders"}
+            image={"spaceInvaders"}
             link={""}
             handleProjectClick={handleProjectClick}
             id={"5"}
@@ -237,20 +237,20 @@ const Home = ({ selected, setSelected }) => {
           />
           <ProjectBox
             active={active3}
-            title={"Gazetteer"}
-            image={"gazetter"}
+            title={"Run and Gun"}
+            image={"runAndGun"}
             link={""}
             handleProjectClick={handleProjectClick}
-            id={"6"}
+            id={"7"}
             row={"2"}
           />
           <ProjectBox
             active={active3}
-            title={"Gazetteer"}
-            image={"gazetter"}
+            title={"My Portfolio"}
+            image={"thisWeb"}
             link={""}
             handleProjectClick={handleProjectClick}
-            id={"6"}
+            id={"8"}
             row={"2"}
           />
           <ProjectDetails
