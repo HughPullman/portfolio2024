@@ -1,9 +1,13 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import BackCanvas from "./components/BackCanvas/BackCanvas";
 import Loading from "./components/Loading/Loading";
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const BackCanvas = dynamic(() => import("./components/BackCanvas/BackCanvas"), {
+  ssr: false,
+});
 
 function App() {
   const [loading, setLoading] = useState(true);

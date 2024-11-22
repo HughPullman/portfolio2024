@@ -10,6 +10,7 @@
 .app{
   height: 100vh;
   overflow: hidden;
+  background-color: #0b1215;
 
   .hide{
     display: none;

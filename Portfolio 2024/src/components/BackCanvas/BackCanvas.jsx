@@ -1,24 +1,24 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-
 import "./BackCanvas.scss";
-import KeyBoard from "../Keyboard/Keyboard";
+import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import ModelFromPath from "./ModelFromPath";
 
 const BackCanvas = () => {
+  const handleMouseOver = () => {};
+
   return (
     <Canvas
-      shadows
-      camera={{
-        fov: 45,
-        position: [-3, 5, 3],
-      }}
       className="backCanvas"
+      gl={{ antialias: true }}
+      dpr={[1, 2]}
+      onMouseOver={handleMouseOver}
     >
-      <ambientLight />
+      <directionalLight position={[5, 10, 5]} intensity={4} />
+      {/* <ambientLight intensity={1} /> */}
       <Suspense fallback={null}>
-        <OrbitControls />
-        <KeyBoard />
+        <mesh>
+          <ModelFromPath />
+        </mesh>
       </Suspense>
     </Canvas>
   );
