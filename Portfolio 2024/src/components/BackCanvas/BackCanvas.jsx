@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import "./BackCanvas.scss";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
@@ -5,6 +6,7 @@ import ModelFromPath from "./ModelFromPath";
 
 const BackCanvas = () => {
   const handleMouseOver = () => {};
+  //move on mouseover?
 
   return (
     <Canvas
