@@ -6,6 +6,41 @@
   max-width: 100vw;
 }
 
+@media only screen and (max-width: 1800px) {
+  .app{
+    height: auto !important;
+    min-height: 100vh;
+    overflow: scroll !important;
+  }
+  .container{
+    display: none !important;
+  }
+  .canvasMac{
+    display: none !important;
+  }
+  .clickMe{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+ .profileImg{
+  display: none;
+ }
+
+ .introbox{
+  width: 80% !important;
+  flex-direction: column;
+  height: auto !important;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+  .home{
+    padding-top: 100px !important;
+  }
+}
+
 
 .app{
   height: 100vh;

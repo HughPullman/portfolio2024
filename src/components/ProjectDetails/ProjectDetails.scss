@@ -1,3 +1,40 @@
+
+@media only screen and (max-width: 1000px) {
+    .projectDetails{
+        top: 80px;
+        left: 0px;
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .left{
+            width: 100% !important;
+            height: auto !important;
+            padding: 30px !important;
+            padding-top: 60px !important;
+
+            h2{
+                font-size: 18px !important;
+            }
+
+            p{
+                font-size: 12px;
+                padding-bottom: 10px;
+            }
+
+            span{
+                gap: 10px !important;
+                max-width: 100% !important;
+            }
+        }
+
+        .closeBtn{
+            display: none !important;
+        }
+    }
+}
+
 .projectDetails{
     position: absolute;
     width: 1245px;
@@ -31,6 +68,7 @@
         span{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 20px;
 
             .icon{

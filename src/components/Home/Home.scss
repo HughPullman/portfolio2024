@@ -1,3 +1,30 @@
+@media only screen and (max-width: 600px) {
+    .home {
+        .experienceBoxes {
+            width: 100% !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            .box {
+                flex-direction: column !important;
+            }
+            
+        }
+        
+    }
+    #education1 {
+        display: block !important;
+        margin-top: 195px;
+    }
+    #education2 {
+        display: none !important;
+    }
+
+    .projectsTab{
+        width: 100% 1 !important;
+        
+    }
+}
+
 .home{
     display: flex;
     flex-direction: row;
@@ -84,6 +111,9 @@
             transform: scale(1.02);
         }
 
+        #education1{
+            display: none;
+        }
 
     }
 
@@ -92,7 +122,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 15px;
-        row-gap: 15px;  
+        row-gap: 15px;
+        align-items: center;
+        justify-content: center;
     }
 
 }

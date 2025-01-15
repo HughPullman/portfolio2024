@@ -175,8 +175,9 @@ const Home = ({ selected, setSelected }) => {
                 />
               </div>
             </div>
+            <Education active={active2} ids={"education1"} />
           </div>
-          <Education active={active2} />
+          <Education active={active2} ids={"education2"} />
         </>
       )}
       {change === "3" && (

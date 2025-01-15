@@ -26,7 +26,7 @@ const IntroBox = ({ active }) => {
       <div className="aboutIntro">
         <div className="me">
           <h1>About Me</h1>
-          <img src="/img/me.jpg" alt="" />
+          <img src="/img/me.jpg" alt="" className="profileImg" />
         </div>
         <p>
           I’m a full-stack software engineering, with a stronger focus in

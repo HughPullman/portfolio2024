@@ -1,7 +1,7 @@
 import "./Education.scss";
 import { useEffect, useState } from "react";
 
-const Education = ({ active }) => {
+const Education = ({ active, ids }) => {
   const [education, setEducation] = useState("");
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Education = ({ active }) => {
   }, [active]);
 
   return (
-    <div className={`education ${education}`}>
+    <div className={`education ${education}`} id={ids}>
       <h2>Education</h2>
       <div className="wrap">
         <span className="title">Digital Futures</span>
