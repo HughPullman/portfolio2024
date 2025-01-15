@@ -35,7 +35,7 @@ const IntroBox = ({ active }) => {
         </p>
         <CanvasMac />
         <span className="clickMe">
-          <AdsClickIcon /> Click
+          <AdsClickIcon /> Move
         </span>
       </div>
     </div>

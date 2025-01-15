@@ -2,7 +2,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-const ModelFromPath = () => {
+const ModelFromPath = ({ selected }) => {
   useGLTF.preload("/model/xyz_home_work_01_animate.glb");
 
   const group = useRef(null);

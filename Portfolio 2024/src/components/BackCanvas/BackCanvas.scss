@@ -1,8 +1,16 @@
-.backCanvas{
+.container{
     position: fixed !important;
-    top: 35% !important;
-    left: -2% !important;
+    top: 35%;
+    left: -2%;
     width: 600px !important;
     height: 600px !important;
     z-index: 0 !important;
+    transition: ease 1.5s;
+
+    .backCanvas{
+        width: 600px !important;
+        height: 600px !important;
+        z-index: 0 !important;
+    }
 }
+    

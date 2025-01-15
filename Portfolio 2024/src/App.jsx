@@ -31,7 +31,7 @@ function App() {
         )} */}
         <Header active={selected} setActive={setSelected} />
         <Home selected={selected} setSelected={setSelected} />
-        <BackCanvas />
+        <BackCanvas selected={selected} />
       </div>
     </>
   );
