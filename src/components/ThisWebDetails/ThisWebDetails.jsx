@@ -32,7 +32,7 @@ const ThisWebDetails = () => {
         </p>
         <p>
           This project reflects my proficiency in building responsive, visually
-          appealing, and interactive web applications while utilizing
+          appealing, and interactive web applications while utilising
           industry-standard tools and frameworks.
         </p>
         <span>

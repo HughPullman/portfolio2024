@@ -29,7 +29,7 @@ const Header = ({ active, setActive }) => {
             id="1"
           >
             <HashLink className="link" smooth to="" id="2">
-              More Info
+              More About Me
             </HashLink>
           </div>
           <div

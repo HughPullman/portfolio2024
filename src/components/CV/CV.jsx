@@ -15,8 +15,8 @@ const CV = ({ active }) => {
 
   const downloadFile = () => {
     const aTag = document.createElement("a");
-    aTag.href = "/docs/HughPullmanCV.pdf";
-    aTag.setAttribute("download", "HughPullmanCV.pdf");
+    aTag.href = "/docs/HughCV.pdf";
+    aTag.setAttribute("download", "HughCV.pdf");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();

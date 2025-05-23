@@ -20,20 +20,20 @@ const AboutMe = ({ active }) => {
         University of Nottingham and have enhanced my technical skillset through
         coding courses with Digital Futures, Codecademy, and IT Career Switch. I
         thrive in both independent and collaborative environments, bringing a
-        hardworking, honest, and organized approach to all tasks.
+        hard-working, honest, and organised approach to all tasks.
       </span>
       <span>
         My experience spans various industries, including hospitality, where I
         honed customer service and multitasking skills, as well as warehouse and
-        dispatch operations, which developed my organizational abilities.
-        Additionally, summers spent in water sports center management allowed me
-        to build leadership and problem-solving capabilities.
+        dispatch operations, which developed my organisational abilities.
+        Additionally, summers spent in water sports centre management allowed me
+        to build leadership and problem-solving abilities.
       </span>
       <span>
         Having grown up in a military family, frequent relocations and boarding
         school life shaped my adaptability and resilience. These experiences,
-        combined with a passion for exploration, have fueled my love for solo
-        world travel.
+        combined with a passion for exploration, have fuelled my love for world
+        travel.
       </span>
     </div>
   );

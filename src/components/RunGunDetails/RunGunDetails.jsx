@@ -21,11 +21,11 @@ const RunGunDetails = () => {
         <h2>Run and Gun game</h2>
         <p>
           This project is a classic arcade-style run-and-gun game where players
-          aim to dodge or eliminate enemies while racking up a high score. As an
-          avid gamer, I found this project particularly rewarding, especially
+          aim to dodge or eliminate enemies while building up a high score. As
+          an avid gamer, I found this project particularly rewarding, especially
           the challenge of using pure JavaScript to implement the game&apos;s
-          physics and mechanics. It showcases my ability to create engaging
-          interactive experiences with clean and efficient code.
+          mechanics. It showcases my ability to create engaging interactive
+          experiences with clean and efficient code.
         </p>
         <span>
           <div className="icon">
